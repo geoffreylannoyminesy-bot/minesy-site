@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Minesy : applications web et desktop. MinesyVoice transforme un texte en narration vocale en français.">
+<title>Minesy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Michroma&family=Sora:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">MINESY</a>
+    <nav aria-label="Navigation">
+      <a href="#logiciels">Logiciels</a>
+      <a href="#apropos">Qui je suis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="home-hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="label">Web &amp; Desktop Apps</p>
+        <h1>Des applications complètes, de l'idée au produit fini.</h1>
+        <p class="lead">Minesy, c'est mon atelier de logiciels. Je pars d'un besoin réel, je construis l'outil de A à Z et je le livre. Voici ce qui existe déjà et ce qui arrive.</p>
+        <div class="rule"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="logiciels" style="padding-top:24px">
+    <div class="wrap">
+      <p class="label">Logiciels</p>
+      <h2 style="margin-top:14px">Trois applications, chacune née d'un besoin.</h2>
+
+      <div class="cards">
+        <a class="card live" href="voix.html">
+          <div class="shot"><img src="img/interface.png" width="1917" height="1029" alt="Fenêtre de MinesyVoice avec sa timeline."></div>
+          <div class="body">
+            <span class="chip on">Bêta disponible</span>
+            <h3>MinesyVoice</h3>
+            <p>Transforme un texte en narration vocale en français, avec un montage multipiste pour les effets et la musique. Application Windows, gratuite, sans compte.</p>
+            <span class="more-link">Découvrir MinesyVoice →</span>
+          </div>
+        </a>
+
+        <div class="card soon">
+          <div class="ph">Bientôt</div>
+          <div class="body">
+            <span class="chip">Bientôt</span>
+            <h3>MinesyCNC</h3>
+            <p>Transforme images, SVG et modèles 3D en G-code pour fraiseuse CNC. Née de la table CNC que j'ai construite moi-même.</p>
+          </div>
+        </div>
+
+        <div class="card soon">
+          <div class="ph">Bientôt</div>
+          <div class="body">
+            <span class="chip">Bientôt</span>
+            <h3>MinesyReplay</h3>
+            <p>Un outil de backtest visuel pour traders forex/CFD : rejoue le marché bougie par bougie avec les coûts réels du broker.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apropos" class="band">
+    <div class="wrap about">
+      <div style="display:grid; gap:14px; align-content:start">
+        <p class="label">Qui je suis</p>
+        <h2>Geoffrey Lannoy, développeur autodidacte.</h2>
+      </div>
+      <div class="text">
+        <p>Après plusieurs années dans l'artisanat, où j'ai dirigé ma propre activité, j'ai choisi de me reconvertir dans le développement.</p>
+        <p>J'ai appris Python en construisant de vrais projets plutôt qu'en restant sur des tutoriels. Chaque logiciel ci-dessus est parti d'un besoin personnel, et je l'ai mené jusqu'au produit fini.</p>
+        <p>Je suis disponible pour des missions et pour un poste, en télétravail.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap about">
+      <div style="display:grid; gap:14px; align-content:start">
+        <p class="label">Contact</p>
+        <h2>Une question, un projet ?</h2>
+      </div>
+      <div class="text">
+        <p>Écris-moi pour une question sur un logiciel, une mission, ou une demande de code source des bibliothèques LGPL utilisées.</p>
+        <div class="contact-row">
+          <span class="mail"><code>contact@minesy.app</code><button class="copy" type="button" id="copy-mail">Copier</button></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="copyright" style="margin-top:0; padding-top:0; border-top:0">
+      <span>© 2026 Geoffrey Lannoy (Minesy). Tous droits réservés.</span>
+      <span>Le nom Minesy et le logo restent la propriété de leur auteur.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

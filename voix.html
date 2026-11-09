@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="MinesyVoice : application Windows gratuite qui transforme un texte en narration vocale en français, avec montage multipiste.">
+<title>MinesyVoice</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Michroma&family=Sora:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="img/logo.png" alt="Minesy Voice">
+    <nav aria-label="Navigation">
+      <a href="index.html">← Tous les logiciels</a>
+      <a href="#fonctions">Fonctions</a>
+      <a href="#ecouter">Écouter</a>
+      <a href="#beta">Bêta</a>
+      <a href="#telecharger">Télécharger</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="label">Application Windows · Bêta</p>
+        <h1>Transforme un texte en <em>narration</em>, sur ton ordinateur.</h1>
+        <p class="lead">MinesyVoice découpe ton texte en segments, donne une voix à chacun, puis te laisse monter le tout avec des effets et de la musique. Pensé pour les narrations de type livre audio.</p>
+        <div class="actions">
+          <a class="btn primary" href="#telecharger">Télécharger la bêta</a>
+          <a class="btn" href="#fonctions">Voir les fonctions</a>
+        </div>
+        <div class="facts">
+          <span>Gratuit</span>
+          <span>Sans compte</span>
+          <span>La synthèse se fait sur ton ordinateur</span>
+        </div>
+      </div>
+
+      <div class="frame">
+        <img src="img/interface.png" width="1917" height="1029" alt="Fenêtre de MinesyVoice : liste des segments, réglages de la voix, et timeline avec les pistes narration, effets et musique.">
+      </div>
+      <p class="caption">Un projet de narration ouvert dans MinesyVoice : segments, réglages, puis timeline à trois pistes.</p>
+    </div>
+  </section>
+
+  <section id="fonctions">
+    <div class="wrap">
+      <div class="intro">
+        <p class="label">Visite guidée</p>
+        <h2>Écrire, régler, écouter, monter.</h2>
+        <p>Le travail se fait en quatre temps, dans la même fenêtre.</p>
+      </div>
+
+      <div class="tour">
+        <div class="pair split">
+          <div class="item">
+            <h3>Importe ou colle ton texte</h3>
+            <p>Ouvre un fichier .txt, .md ou .docx, ou colle ton texte directement. Il est découpé par paragraphe (recommandé) ou par phrase, et l'aperçu des segments se met à jour en direct.</p>
+            <p>Tu peux forcer une coupure à l'endroit de ton choix avec le caractère |, par exemple pour séparer un dialogue de la narration. Choisis ensuite d'ajouter le texte à la fin du script ou de le remplacer. Un seul Ctrl+Z annule tout l'import.</p>
+          </div>
+          <div class="plain-shot import-shot">
+            <img src="img/import.png" width="694" height="746" alt="Fenêtre Importer du texte : ouverture d'un fichier ou texte collé, choix du découpage par paragraphe ou par phrase, destination, aperçu des segments.">
+          </div>
+        </div>
+
+        <div class="shots">
+          <figure style="--fw:394px">
+            <img src="img/segments.png" width="394" height="485" alt="Liste des segments du texte, avec une pastille verte quand l'audio est à jour.">
+            <figcaption class="item">
+              <h3>Ton texte, segment par segment</h3>
+              <p>Chaque segment a sa ligne et son bouton d'écoute. La barre verte indique que l'audio est à jour avec le texte et les réglages.</p>
+            </figcaption>
+          </figure>
+          <figure style="--fw:462px">
+            <img src="img/reglages.png" width="462" height="472" alt="Réglages d'un segment : voix, vitesse, hauteur, intensité, pauses avant et après.">
+            <figcaption class="item">
+              <h3>Des réglages pour chaque segment</h3>
+              <p>Dix voix au choix, puis vitesse, hauteur (jusqu'à six demi-tons, au dixième près), intensité et pauses. Un dialogue peut avoir une autre voix que la narration.</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="item">
+          <div class="plain-shot">
+            <img src="img/variantes.png" width="1140" height="112" alt="Boutons de génération : Variante 1, 2 et 3, Historique, Générer, Générer des variantes, Choisir, Générer tout.">
+          </div>
+          <h3>Générer un segment, des variantes, ou tout le texte</h3>
+          <div class="more tight">
+            <div>
+              <h3>Générer</h3>
+              <p>Génère le segment sélectionné avec ses réglages, et tu l'écoutes aussitôt.</p>
+            </div>
+            <div>
+              <h3>Des variantes</h3>
+              <p>Trois prises du même segment. Écoute chaque variante, puis « Choisir » garde celle qui te plaît. Les prises restent dans l'historique.</p>
+            </div>
+            <div>
+              <h3>Générer tout</h3>
+              <p>Tout le texte d'un coup, segment après segment. Les segments vides ou déjà à jour sont sautés. Tu peux aussi ne générer qu'une sélection, par exemple tous les dialogues.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="crop" style="--iw:1917; --w:1917; --h:402; --x:0; --y:548">
+            <img src="img/interface.png" alt="Timeline avec une piste de narration, des effets sonores et de la musique d'ambiance.">
+          </div>
+          <h3>Une timeline à trois pistes</h3>
+          <p>La voix, les effets et la musique se mixent sur une vraie timeline. Place tes sons, déplace-les, rogne-les, ajoute des fondus. Tu peux aussi glisser un bloc de voix pour ajuster les pauses.</p>
+        </div>
+
+        <div class="item">
+          <div class="plain-shot">
+            <img src="img/barre.png" width="1086" height="72" alt="Barre de réglages : volume et fondus du son sélectionné, volume et sourdine de chaque piste, case Baisse sous narration.">
+          </div>
+          <h3>La musique s'efface quand la voix parle</h3>
+          <p>Active « Baisse sous narration » sur la piste musique : elle descend d'elle-même sous la voix et remonte ensuite. Le niveau et la vitesse de la baisse se règlent. Chaque piste a son volume et sa sourdine, chaque son son volume et ses fondus.</p>
+        </div>
+      </div>
+
+      <div class="more">
+        <div>
+          <h3>Import simple</h3>
+          <p>Texte collé, .txt, .md ou .docx. Sons en WAV, MP3, OGG ou FLAC.</p>
+        </div>
+        <div>
+          <h3>Annulation partout</h3>
+          <p>Ctrl+Z revient sur un texte, un réglage, un déplacement de son.</p>
+        </div>
+        <div>
+          <h3>Export WAV ou MP3</h3>
+          <p>Le mix complet, prêt pour une vidéo, un podcast ou un livre audio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ecouter">
+    <div class="wrap">
+      <div class="intro">
+        <p class="label">Écouter</p>
+        <h2>Un extrait, tel que MinesyVoice le produit.</h2>
+        <p>Voix de synthèse, avec une musique d'ambiance qui s'efface quand la voix parle. Rendu exporté directement depuis l'application.</p>
+      </div>
+      <div class="listen">
+        <div class="track">
+          <h3>Roman : <em>Mademoiselle de Maupin</em></h3>
+          <audio controls preload="none" src="audio/extrait-maupin.mp3">Ton navigateur ne peut pas lire cet extrait audio.</audio>
+          <p>Texte : Théophile Gautier (domaine public). Musique : Beethoven, Sonate n° 14 « Clair de lune », enregistrement <a href="https://musopen.org" target="_blank" rel="noopener">Musopen</a> (domaine public, via Wikimedia Commons).</p>
+        </div>
+        <p class="note">Voix générée par IA (Supertonic).</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beta" class="band">
+    <div class="wrap">
+      <p class="label">Version bêta</p>
+      <h2 style="margin-top:14px">Ce qu'il faut savoir avant de l'essayer.</h2>
+      <ul class="limits">
+        <li>Voix en français uniquement
+          <small>Dix voix préréglées, pas de clonage de voix.</small></li>
+        <li>Rendu peu expressif
+          <small>C'est une voix de synthèse, pas un comédien.</small></li>
+        <li>Court temps de préparation avant l'écoute
+          <small>La timeline est calculée avant chaque lecture.</small></li>
+        <li>Windows uniquement
+          <small>Pas de version Mac ou Linux pour le moment.</small></li>
+        <li>Une prononciation parfois à corriger
+          <small>Une liaison ou un mot peut sonner faux. Écris-le comme tu veux l'entendre, même avec une faute : « teu » pour « te », par exemple.</small></li>
+        <li>Pas de rires ni de soupirs
+          <small>Les balises d'émotion sont lues à voix haute au lieu d'être jouées.</small></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="telecharger">
+    <div class="wrap dl">
+      <div style="display:grid; gap:16px; align-content:start">
+        <p class="label">Télécharger</p>
+        <h2>Gratuit, sans compte.</h2>
+        <p style="color:var(--muted); max-width:52ch">L'application se télécharge en dossier compressé. Au premier lancement, MinesyVoice télécharge le modèle vocal (environ 400 Mo). Ensuite, la synthèse se fait entièrement sur ton ordinateur.</p>
+      </div>
+      <div class="dl-card">
+        <p class="soon">MinesyVoice 0.1.0 (bêta)</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/geoffreylannoyminesy-bot/MinesyVoice-releases/releases/download/v0.1.0-beta/MinesyVoice-0.1.0-beta-windows.zip" target="_blank" rel="noopener">Télécharger pour Windows (121 Mo)</a>
+        </div>
+        <p>Windows 64 bits. Un processeur suffit, aucune carte graphique n'est nécessaire. <a href="https://github.com/geoffreylannoyminesy-bot/MinesyVoice-releases/releases/tag/v0.1.0-beta">Notes de version</a></p>
+        <ol class="steps">
+          <li><b>Décompresse</b> le dossier téléchargé.</li>
+          <li><b>Lance</b> MinesyVoice.exe.</li>
+          <li><b>Patiente</b> au premier démarrage, le temps du téléchargement du modèle.</li>
+        </ol>
+        <p>Windows peut afficher un avertissement, car l'application n'est pas encore signée : clique sur « Informations complémentaires », puis « Exécuter quand même ».</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="legal">
+      <div>
+        <h3>Licence</h3>
+        <p>Logiciel gratuit dans sa version actuelle. Le code source n'est pas publié. Usage libre, y compris commercial pour les audios produits, dans le respect des conditions d'utilisation.</p>
+      </div>
+      <div>
+        <h3>Voix générée par IA</h3>
+        <p>Quand tu publies un contenu réalisé avec MinesyVoice, indique qu'il s'agit d'une voix générée par une intelligence artificielle, par exemple : « Voix générée par IA (Supertonic) ».</p>
+      </div>
+      <div>
+        <h3>Crédits et contact</h3>
+        <p>Moteur vocal : Supertonic (Supertone Inc.). MinesyVoice n'est ni approuvé ni parrainé par Supertone. Le code source des bibliothèques LGPL (PySide6, lameenc, libsndfile) est disponible auprès de leurs projets, ou sur demande écrite :</p>
+        <span class="mail"><code>contact@minesy.app</code><button class="copy" type="button" id="copy-mail">Copier</button></span>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2026 Geoffrey Lannoy (Minesy). Tous droits réservés.</span>
+      <span>Le nom Minesy et le logo restent la propriété de leur auteur.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
